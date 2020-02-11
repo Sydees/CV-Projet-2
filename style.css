@@ -1,0 +1,217 @@
+body {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0;
+    width: 980px;
+}
+
+h1, h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 17px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#containeur {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 3px black;
+}
+
+.coljaune {
+    display: flex;
+    flex-direction: column;
+    background-color: #F57C00;
+    margin-right: 15px;
+}
+
+.prenomcouleur {
+    color: #FFCA28;
+}
+
+.petiteimage {
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: -1px 2px 5px 1px  rgba(0, 0, 0, 0.7); 
+}
+
+.photo {
+    display: flex;    
+    justify-content: center; 
+    margin: 40px;
+}
+
+.titre_contact, .titre_apropos, .titre_loisirs {
+    text-align: center;
+}
+
+.icone_loisirs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.icone_music {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.titre_contact, .titre_apropos, .titre_loisirs {
+    background-color: #424242;
+    color: #FFCA28;
+    padding: 5px;
+}
+
+.p_apropos, .p_contact {
+    margin: 15px;    
+   
+}
+
+.loisirs {
+    margin-top: auto;
+}
+
+.titre_principal {
+    font-size: 260%;
+}
+
+.soustitre {
+    font-size: 130%;
+    margin-top: -25px;
+    margin-bottom: 135px;
+}
+
+.en_tete {
+    margin-left: 60px;
+}
+
+#formation, #exp_pro {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-left: 30px;
+    padding-right: 50px;
+}
+
+#recommandations {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 30px;
+    padding-right: 50px;
+    margin-bottom: 50px;
+} 
+
+section > .title {
+    grid-column: 1 / -1;
+    position: relative;
+}
+
+.title > i {
+    position: absolute;
+    top: 16px;
+}
+
+.title > h2 {
+    margin-left: 45px;
+}
+
+section > .title::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #FFCA28;
+    position: relative;
+    top: -15px;
+}
+
+.soustitre::after {
+    content: "";
+    display: block;
+    border-bottom: 1.5px solid #FFCA28;
+    width: 55px;
+    padding: 1.5px;
+}
+
+i {
+    color: #FFCA28;
+}
+
+.date {
+    position: relative;
+    left: 30px;    
+}
+
+.date1 > i {
+    position: absolute;
+    left: -30px;
+}
+
+/* Media Queries */
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    p {
+        font-size: 85%;
+    }
+    #containeur {
+        grid-template-columns: 1fr; 
+    }
+    body {
+        margin-top: 0;
+        margin-bottom: 0;
+        width: auto;
+    }
+    .coljaune {
+        text-align: center;
+    }
+    .en_tete {
+        text-align: center;
+        margin: 0;
+        margin-top: 50px;
+    }    
+    .soustitre::after {
+        content: "";
+        margin: auto;
+        position: relative;
+        left: -100px; 
+    }
+    #formation, #exp_pro, #recommandations {
+        grid-template-columns: 1fr;
+        margin-left: -26px;
+    }
+    .date {
+        position: relative;
+        top: 25px;
+    }
+    .coljaune {        
+        margin-right: 0;
+    }    
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 576px) and (max-width: 768px) {
+    body {
+        margin-top: 0;
+        margin-bottom: 0;
+        width: auto;
+        margin: auto;
+        padding: 0;
+    }
+    #formation, #exp_pro, #recommandations {        
+        padding-right: 5px;
+        margin-left: -26px;
+    }
+}
+
+/* Media Queries */
