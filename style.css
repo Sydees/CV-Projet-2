@@ -160,7 +160,7 @@ i {
 /* Media Queries */
 
 /* // Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
+@media (min-width: 100px) and (max-width: 576px) {
     p {
         font-size: 85%;
     }
