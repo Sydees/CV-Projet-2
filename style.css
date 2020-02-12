@@ -51,7 +51,7 @@ p {
 .photo {
     display: flex;    
     justify-content: center; 
-    margin: 40px;
+    margin: 15%;
 }
 
 .titre_contact, .titre_apropos, .titre_loisirs {
@@ -196,10 +196,6 @@ i {
     }
     .coljaune {        
         margin-right: 0;
-    }  
-    .petiteimage {
-        width: 40%;
-        height: auto;
     }  
 }
 
