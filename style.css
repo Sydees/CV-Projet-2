@@ -161,7 +161,7 @@ i {
 /* Media Queries */
 
 /* // Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     p {
         font-size: 85%;
     }
@@ -201,7 +201,7 @@ i {
 }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 988px) {
     body {
         margin-top: 0;
         margin-bottom: 0;
